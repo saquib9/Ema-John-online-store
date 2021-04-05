@@ -30,7 +30,7 @@ const Shop = () => {
         let newCart;
         if(sameProduct){
             console.log(sameProduct)
-            count = sameProduct.quantity + 1;     // sameProduct.quantity toh declare korinai!! Tahle? - actually else ae declare korsi :3
+            count = sameProduct.quantity + 1;   //sameProduct.quantity toh declare korinai!! Tahle? - actually else ae declare korsi :3
             sameProduct.quantity = count;
             const others = cart.filter( pd => pd.key !== toBeAddedKey)
             newCart = [...others, sameProduct]

@@ -6,7 +6,7 @@ import Product from '../Product/Product';
 const ProductDetail = () => {
     const { productKey } = useParams()
     const product = fakeData.find(pp => pp.key === productKey)    // fakeData[] ekta array.
-    //console.log(product)
+
     return (
         <div>
             <h2>Your product details</h2>
